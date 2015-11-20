@@ -7,19 +7,22 @@
 /*header > .clear {
   clear: both;
   height: 0; overflow: hidden; /* Précaution pour IE 7 */
+
 ul {
   list-style: none;
 }
-
 #imgraccourcis {
   float: left;
+  margin-left: -6%;
 }
-
 code {
   background-color: lightblue;
   border-radius: 10px;
   border-width: 5px;
   padding: 0.1em;
+}
+.dessous {
+  clear: both;
 }
 h3 {
   margin-bottom: 2em;
@@ -27,6 +30,12 @@ h3 {
 h4 {
   margin-bottom: 1.8em;
   margin-top: 1.8em;
+}
+.jumbotron p {
+  font-size: 1.3em;
+}
+.commandes p {
+  margin-left: 0px;
 }
 .footer-distributed {
   background-color: #292c2f;
@@ -91,6 +100,9 @@ h4 {
   }
   .firstjumbo {
     margin-top: 15em;
+  }
+  .jumbotron p {
+    font-size: 1.2em;
   }
   #menu-toggle {
     margin-top: 2em;

@@ -49,7 +49,7 @@
             <a href="http://dupontbertrand.github.io/cheatsheetcss/">CSS</a>
           </li>
           <li>
-            <a href="#">Emmet</a>
+            <a href="http://dupontbertrand.github.io/cheatsheetemmet/">Emmet</a>
           </li>
           <li>
             <a href="#">Terminal</a>
@@ -135,10 +135,11 @@
         <div class="row">
           <div class="col-md-10">
             <h3 id="#presentation"> Présentation :</h3>
-            <p> Fondamentalement, la plupart des éditeurs de texte vous permettent de stocker et de réutiliser couramment utilisé des morceaux de code, appelés « snippets» . Alors que les "snippets" sont un bon moyen d' accroître votre productivité, les implémentations ont un problème récurrents : vous devez définir l'extrait d'abord et vous ne pouvez pas les étendre dans l'exécution.</p>
+            <p> Fondamentalement, la plupart des éditeurs de texte vous permettent de stocker et de réutiliser couramment utilisé des morceaux de code, appelés « snippets» . Alors que les "snippets" sont un bon moyen d' accroître votre productivité, les implémentations
+              ont un problème récurrents : vous devez définir l'extrait d'abord et vous ne pouvez pas les étendre dans l'exécution.</p>
 
-            <p>Emmet prend l'idée de "snippets" à un tout nouveau niveau : vous pouvez taper des balises CSS qui peuvent être analysés de façon dynamique, et produire un rendu en fonction de ce que vous tapez dans l'abréviation. Emmet est développé
-              et optimisé pour les développeurs web dont le flux de travail dépend de HTML / XML et CSS , mais celui ci peut-être utilisé avec des langages de programmation.</p>
+            <p>Emmet prend l'idée de "snippets" à un tout nouveau niveau : vous pouvez taper des balises CSS qui peuvent être analysés de façon dynamique, et produire un rendu en fonction de ce que vous tapez dans l'abréviation. Emmet est développé et optimisé
+              pour les développeurs web dont le flux de travail dépend de HTML / XML et CSS , mais celui ci peut-être utilisé avec des langages de programmation.</p>
           </div>
         </div>
       </div>
@@ -146,26 +147,45 @@
     <div class="container">
       <div class="jumbotron">
         <div class="row">
-          <div class="col-md-12">
-          <img id="imgraccourcis" class="img-responsive" src="raccourcis.jpg" alt="raccourcis" />
-          <p>Voici les exemples :</p>
-          <p> <code>a{Click me}</code> = &lt;a href=""&gt;Click me&lt;/a&gt; </p>
-          <p> <code>p[title="Hello world"]</code> = &lt;p title="Hello world"&gt;&lt;/p&gt; </p>
-          <p> <code> nav&gt;ul&gt;li </code> = &lt;nav&gt; &lt;ul&gt; &lt;li&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt;</p>
+          <div class="commandes">
+            <div class="col-md-12">
+              <img id="imgraccourcis" class="img-responsive" src="raccourcis.jpg" alt="raccourcis" />
+
+              <p>Voici les exemples :</p>
+              <p>
+                <code>a{Click me}</code> = &lt;a href=""&gt;Click me&lt;/a&gt; </p>
+              <p>
+                <code>p[title="Hello world"]</code> = &lt;p title="Hello world"&gt;&lt;/p&gt; </p>
+              <p>
+                <code> nav&gt;ul&gt;li </code> = &lt;nav&gt; &lt;ul&gt; &lt;li&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt;</p>
+              <p>
+                <code>div+div&lt;p&lt;span+em^bq</code> = &lt;/div&gt;&lt;/div&gt; &lt;/div&gt; &lt;/p&gt;&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/em&gt;&lt;/p&gt; &lt;/blockquote&gt;&lt;/blockquote&gt; &lt;/div&gt; </p>
+              <p class="dessous">
+                <code>ul&gt;li*5</code>
+                &lt;ul&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;/ul&gt;
+              </p>
+              <p>
+                <code>ul&gt;li.item$*5</code>
+                &lt;ul&gt; &lt;li class="item1"&gt;&lt;/li&gt; &lt;li class="item2"&gt;&lt;/li&gt; &lt;li class="item3"&gt;&lt;/li&gt; &lt;li class="item4"&gt;&lt;/li&gt; &lt;li class="item5"&gt;&lt;/li&gt; &lt;/ul&gt;
+              </p>
+              <p>
+                <code>div+p+bq</code>
+                &lt;div&gt;&lt;/div&gt; &lt;p&gt;&lt;/p&gt; &lt;blockquote&gt;&lt;/blockquote&gt; </p>
+              <p>
+                <code>div&gt;(header&gt;ul&gt;li*2&gt;a)+footer&gt;p</code>
+                &lt;div&gt; &lt;header&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/header&gt; &lt;footer&gt; &lt;p&gt;&lt;/p&gt; &lt;/footer&gt; &lt;/div&gt;
+              </p>
+              <p>
+                <code>.class1</code> &lt;div class="class1"&gt;&lt;/div&gt;</p>
+              <p>
+                <code>#id1</code> &lt;div id="id1"&gt;&lt;/div&gt;</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="row">
-          <div class="col-md-10">
 
-          </div>
-        </div>
-
-      </div>
     </div>
+
 
 
     <footer class="footer-distributed">
@@ -199,9 +219,9 @@
     </footer>
 
     <!-- /#page-content-wrapper -->
-
-    <!-- /#wrapper -->
   </div>
+  <!-- /#wrapper -->
+
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
 
