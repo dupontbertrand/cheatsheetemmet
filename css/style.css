@@ -11,6 +11,9 @@ ul {
   list-style: none;
 }
 
+#imgraccourcis {
+  float: left;
+}
 
 code {
   background-color: lightblue;
