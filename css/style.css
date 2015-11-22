@@ -3,6 +3,9 @@
   width: 125px;
   height: 128px;
 }
+.dessous {
+  clear: both;
+}
 
 /*header > .clear {
   clear: both;
@@ -21,9 +24,7 @@ code {
   border-width: 5px;
   padding: 0.1em;
 }
-.dessous {
-  clear: both;
-}
+
 h3 {
   margin-bottom: 2em;
 }
@@ -94,6 +95,7 @@ h4 {
   }
   #logoroubaix {
     display: none;
+    /*Suppression du logo simplon Roubaix en version mobile*/
   }
   #sectionsdropdown {
     margin-top: 2px;
